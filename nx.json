@@ -1,0 +1,22 @@
+{
+  "npmScope": "mlab",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "landing-page": {
+      "tags": []
+    },
+    "landing-page-e2e": {
+      "tags": [],
+      "implicitDependencies": ["landing-page"]
+    }
+  }
+}
