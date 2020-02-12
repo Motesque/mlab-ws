@@ -1,4 +1,5 @@
 import React from 'react';
+import { SharedComponents } from '@mlab/shared-components';
 
 import './index.scss';
 import { ReactComponent as NxLogo } from '../assets/nx-logo-white.svg';
@@ -18,6 +19,7 @@ export const Index = () => {
           Welcome to landing-page! [{environment.production ? 'PROD' : 'DEV'}]
         </h1>
       </header>
+      <SharedComponents></SharedComponents>
       <main>
         <h2>Resources &amp; Tools</h2>
         <p>Thank you for using and showing some ♥ for Nx.</p>
