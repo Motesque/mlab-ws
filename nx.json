@@ -16,10 +16,18 @@
     },
     "landing-page-e2e": {
       "tags": [],
-      "implicitDependencies": ["landing-page"]
+      "implicitDependencies": [
+        "landing-page"
+      ]
     },
     "shared-components": {
       "tags": []
+    },
+    "shared-components-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "shared-components"
+      ]
     }
   }
 }
