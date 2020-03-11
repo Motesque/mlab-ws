@@ -1,5 +1,6 @@
 import React from 'react';
-import { SharedComponents } from '@mlab/shared-components';
+import { SharedComponents, Header } from '@mlab/shared-components'; 
+import styled from 'styled-components'
 
 import './index.scss';
 import { ReactComponent as NxLogo } from '../assets/nx-logo-white.svg';
@@ -13,13 +14,14 @@ export const Index = () => {
    */
   return (
     <div className="app">
-      <header className="flex">
+     <Header></Header> <header className="flex">
         <NxLogo alt="" width="75" height="50" />
         <h1>
           Welcome to landing-page! [{environment.production ? 'PROD' : 'DEV'}]
         </h1>
       </header>
       <SharedComponents></SharedComponents>
+      
       <main>
         <h2>Resources &amp; Tools</h2>
         <p>Thank you for using and showing some ♥ for Nx.</p>
@@ -113,5 +115,14 @@ nx affected:e2e
     </div>
   );
 };
+
+const Container = styled.div`
+  width: 960px;
+  height: 100vh;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f2f2f2;
+`
+const Heading = styled.h1``
 
 export default Index;

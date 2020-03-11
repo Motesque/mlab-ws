@@ -51,6 +51,12 @@ Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The 
 
 Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
 
+# Generate UI lib
+nx g @nrwl/react:lib ui
+
+# Add a component
+nx g @nrwl/react:component xyz --project ui
+
 ## Build
 
 Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
